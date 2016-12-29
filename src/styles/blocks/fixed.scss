@@ -1,0 +1,128 @@
+.fixed {
+  position: absolute;
+  padding-top: 110px;
+  width: 85px;
+  height: 500px;
+  background: #fff;
+  left: 0;
+  top: 0;
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+  &__item {
+    position: relative;
+    text-indent: -9999px;
+    cursor: pointer;
+    &--search {
+      left: 45%;
+      color: #015e27;
+      margin-top: 2px;
+      margin-left: 3px;
+      width: 24px;
+      height: 24px;
+      margin-bottom: 50px;
+      border: solid 2px currentColor;
+      border-radius: 100%;
+      transform: rotate(-45deg) translateX(-50%) ;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 21px;
+        left: 5px;
+        height: 12px;
+        width: 2px;
+        background-color: currentColor;
+      }
+    }
+    &--menu {
+      width: 50px;
+      height: 45px;
+      margin-bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 5px;
+      span{
+        position: absolute;
+        color: $accent-color;
+        margin-left: 2px;
+        left: 49%;
+        transform: translateX(-50%);
+        top: 20px;
+
+        width: 34px;
+        height: 4px;
+        background-color: currentColor;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: -10px;
+          left: 0;
+          width: 34px;
+          height: 4px;
+          background-color: currentColor;
+          cursor: pointer;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 34px;
+          height: 4px;
+          background-color: currentColor;
+          cursor: pointer;
+        }
+      }
+
+      &:hover{
+       background: $accent-color;
+        span,span::after,span::before{
+          background: #fff;
+        }
+      }
+    }
+    &:nth-child(n+3){
+      margin-bottom: 0;
+      transform: translateX(-50%);
+    }
+    &--flag{
+      width: 60px;
+      height: 54px;
+      left: 53%;
+      background: url('../images/books/flag.jpg#books');
+    }
+    &--study{
+      width: 61px;
+      height: 52px;
+      left: 50%;
+      background: url('../images/books/study-min.jpg#books');
+    }
+    &--children{
+      width: 59px;
+      height: 57px;
+      left: 50%;
+      background: url('../images/books/children-min.jpg#books');
+    }
+    &--classic{
+      width: 74px;
+      height: 47px;
+      left: 54%;
+      background: url('../images/books/classic-min.jpg#books');
+    }
+    &--modern{
+      width: 58px;
+      height: 51px;
+      left: 52%;
+      background: url('../images/books/modern-min.jpg#books');
+    }
+    &--interactive{
+      width: 64px;
+      height: 53px;
+      left: 50%;
+      background: url('../images/books/interactive-min.jpg#books');
+    }
+  }
+}
