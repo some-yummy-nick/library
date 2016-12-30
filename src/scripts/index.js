@@ -19,5 +19,16 @@
       menuBottom.style.display='none';
     });
   }
+})();
+(function() {
+      var searchField = document.querySelector('.header__search-field');
+      var searchSubmit = document.querySelector('.header__search-submit');
 
+      searchField.addEventListener('input', function () {
+        if(searchField.value !== ''){
+          searchSubmit.style.opacity = 1;
+        } else{
+          searchSubmit.style.opacity = 0.5;
+        }
+      })
 })();
