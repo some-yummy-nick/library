@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
   <script>WebFont.load({
     google: {
-      families: ["PT Sans:400,700"]
+      families: ["PT Sans:300,400,700"]
     }
   });</script>
   <noscript><span class="noscript">У Вас отключён JavaScript...Пожалуйста включите в его в настройках</span>
@@ -23,7 +23,9 @@
 </head>
 <body>
 <!--[if lt IE 8]>
-<p class="chromeframe">Похоже, что ты используешь устаревший браузер, друг. Пожалуйста, <a href="http://browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p>
+<p class="chromeframe">Похоже, что ты используешь устаревший браузер, друг. Пожалуйста, <a
+    href="http://browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a
+    href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p>
 <![endif]-->
 <div class="wrapper">
   @@include('../common/fixed.html')
@@ -32,27 +34,76 @@
     @@include('../common/menu.html')
     <div class="promo">
       <ul class="promo__list">
-        <li class="promo__item  promo__item--study">
-          <a href="index.html"></a>
-          <span></span>
+        <li class="promo__item">
+          <img src="images/study.jpg" alt="promo__item" width="140">
+          <a href="index.html">Учебная литература</a>
+          <span>845</span>
         </li>
-        <li class="promo__item  promo__item--children">
-          <a href="index.html"></a>
-          <span></span>
+        <li class="promo__item">
+          <img src="images/children.jpg" alt="promo__item" width="140">
+          <a href="index.html">Детская литература</a>
+          <span>845</span>
         </li>
-        <li class="promo__item  promo__item--classic">
-          <a href="index.html"></a>
-          <span></span>
+        <li class="promo__item">
+          <img src="images/classic.jpg" alt="promo__item" width="140">
+          <a href="index.html">Классическая литература</a>
+          <span>845</span>
         </li>
-        <li class="promo__item  promo__item--modern">
-          <a href="index.html"></a>
-          <span></span>
+        <li class="promo__item">
+          <img src="images/modern.jpg" alt="promo__item" width="140">
+          <a href="index.html">Современная литература</a>
+          <span>845</span>
         </li>
-        <li class="promo__item  promo__item--interactive">
-          <a href="index.html"></a>
-          <span></span>
+        <li class="promo__item">
+          <img src="images/interactive.jpg" alt="promo__item" width="140">
+          <a href="index.html">Интерактивные книги</a>
+          <span>845</span>
         </li>
       </ul>
+    </div>
+    <div class="filter">
+
+      <div class="filter__switch">
+        <span>switch</span>
+        <i class="filter__switch-icon"></i>
+      </div>
+      <div class="filter__choice">
+        <select name="">
+          <option value="money">Платные</option>
+          <option value="free">Бесплатные</option>
+        </select>
+      </div>
+      <div class="filter__price">
+        <select name="">
+          <option value="">от 100 до 1200 руб.</option>
+          <option value="">от 1300 до 5000 руб.</option>
+        </select>
+      </div>
+      <div class="filter__store">
+        <b>По наличию:</b>
+        <ul>
+          <li><span>success</span>
+            <i class="filter__store-icon  filter__store-icon--success"></i>
+          </li>
+          <li><span>time</span>
+            <i class="filter__store-icon  filter__store-icon--time"></i>
+          </li>
+          <li><span>denied</span>
+            <i class="filter__store-icon  filter__store-icon--denied"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__view">
+        <b>Вид:</b>
+        <ul>
+          <li><span>block</span>
+            <i class="filter__view-icon  filter__view-icon--block"></i>
+          </li>
+          <li><span>inline</span>
+            <i class="filter__view-icon  filter__view-icon--inline"></i>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   @@include('../common/footer.html')

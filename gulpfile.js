@@ -50,7 +50,6 @@ gulp.task('styles', () => {
     ))
     .pipe(plumber())
     .pipe(sass())
-    .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
     .pipe(gulpif(NODE_ENV === 'development',
       sourcemaps.write()
