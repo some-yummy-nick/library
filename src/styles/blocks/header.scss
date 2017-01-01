@@ -92,6 +92,9 @@
       }
     }
   }
+  &__bottom{
+    padding-bottom: 20px;
+  }
   @media($tablet-widths) {
 
     &__top {

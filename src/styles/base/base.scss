@@ -7,12 +7,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
-html,
-body {
-  height: 100%;
-}
+
 html{
-  // set background color for overscroll
+  background: #fff;
 }
 body {
   min-height: 100vh;
@@ -34,14 +31,7 @@ img{
   height: auto;
 }
 .wrapper{
-  display: table;
  padding-left: 90px;
-  height: 100%;
-  width: 100%;
-}
-.content{
-  display: table-row;
-  height: 100%;
 }
 .noscript{
   display: block;

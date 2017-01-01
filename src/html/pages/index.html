@@ -27,88 +27,1316 @@
     href="http://browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a
     href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p>
 <![endif]-->
+<div class="svg-wrapper" style="height: 0; width: 0; position: absolute; visibility: hidden">
+  @@include('../common/svg.html')
+</div>
 <div class="wrapper">
   @@include('../common/fixed.html')
-  <div class="content">
-    @@include('../common/header.html')
-    @@include('../common/menu.html')
-    <div class="promo">
-      <ul class="promo__list">
-        <li class="promo__item">
-          <img src="images/study.jpg" alt="promo__item" width="140">
-          <a href="index.html">Учебная литература</a>
-          <span>845</span>
+  @@include('../common/header.html')
+  @@include('../common/menu.html')
+  <div class="promo">
+    <ul class="promo__list">
+      <li class="promo__item">
+        <img src="images/study.jpg" alt="promo__item" width="140">
+        <a href="index.html">Учебная литература</a>
+        <span>845</span>
+      </li>
+      <li class="promo__item">
+        <img src="images/children.jpg" alt="promo__item" width="140">
+        <a href="index.html">Детская литература</a>
+        <span>845</span>
+      </li>
+      <li class="promo__item">
+        <img src="images/classic.jpg" alt="promo__item" width="140">
+        <a href="index.html">Классическая литература</a>
+        <span>845</span>
+      </li>
+      <li class="promo__item">
+        <img src="images/modern.jpg" alt="promo__item" width="140">
+        <a href="index.html">Современная литература</a>
+        <span>845</span>
+      </li>
+      <li class="promo__item">
+        <img src="images/interactive.jpg" alt="promo__item" width="140">
+        <a href="index.html">Интерактивные книги</a>
+        <span>845</span>
+      </li>
+    </ul>
+  </div>
+  <div class="filter">
+
+    <div class="filter__switch">
+      <span>switch</span>
+      <i class="filter__switch-icon"></i>
+    </div>
+    <div class="filter__choice">
+      <select name="">
+        <option value="money">Платные</option>
+        <option value="free">Бесплатные</option>
+      </select>
+    </div>
+    <div class="filter__price">
+      <select name="">
+        <option value="">от 100 до 1200 руб.</option>
+        <option value="">от 1300 до 5000 руб.</option>
+      </select>
+    </div>
+    <div class="filter__store">
+      <b>По наличию:</b>
+      <ul>
+        <li><span>success</span>
+          <i class="filter__store-icon  filter__store-icon--success"></i>
         </li>
-        <li class="promo__item">
-          <img src="images/children.jpg" alt="promo__item" width="140">
-          <a href="index.html">Детская литература</a>
-          <span>845</span>
+        <li><span>time</span>
+          <i class="filter__store-icon  filter__store-icon--time"></i>
         </li>
-        <li class="promo__item">
-          <img src="images/classic.jpg" alt="promo__item" width="140">
-          <a href="index.html">Классическая литература</a>
-          <span>845</span>
-        </li>
-        <li class="promo__item">
-          <img src="images/modern.jpg" alt="promo__item" width="140">
-          <a href="index.html">Современная литература</a>
-          <span>845</span>
-        </li>
-        <li class="promo__item">
-          <img src="images/interactive.jpg" alt="promo__item" width="140">
-          <a href="index.html">Интерактивные книги</a>
-          <span>845</span>
+        <li><span>denied</span>
+          <i class="filter__store-icon  filter__store-icon--denied"></i>
         </li>
       </ul>
     </div>
-    <div class="filter">
+    <div class="filter__view">
+      <b>Вид:</b>
+      <ul>
+        <li><span>block</span>
+          <i class="filter__view-icon  filter__view-icon--block"></i>
+        </li>
+        <li><span>inline</span>
+          <i class="filter__view-icon  filter__view-icon--inline"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-      <div class="filter__switch">
-        <span>switch</span>
-        <i class="filter__switch-icon"></i>
+  <div class="books">
+    <div class="fast-menu">
+      <h2>Поджанры</h2>
+      <input type="radio" id="popular" name="radio" checked>
+      <input type="radio" id="new" name="radio">
+      <input type="radio" id="recommended" name="radio">
+      <div class="fast-menu__labels">
+        <label for="popular">Популярное</label>
+        <label for="new">Новое</label>
+        <label for="recommended">Рекомендуемое</label>
       </div>
-      <div class="filter__choice">
-        <select name="">
-          <option value="money">Платные</option>
-          <option value="free">Бесплатные</option>
-        </select>
+      <div class="fast-menu__blocks">
+        <div class="fast-menu__block  fast-menu__block-1">
+          <a href="">Литература 18 века</a><span>(899книг)</span>
+          <a href="">Литература 19 века</a><span>(899книг)</span>
+          <a href="">Литература 20 века</a><span>(89книг)</span>
+          <a href="">Советская литература </a><span>(109книг)</span>
+          <a href="">Зарубежная литература </a><span>(89книг)</span>
+          <a href="">Древневосточная литература </a><span>(99книг)</span>
+          <a href="">Европейская </a><span>(89книг)</span>
+        </div>
+        <div class="fast-menu__block  fast-menu__block-2">
+          <a href="">Литература 18 века</a><span>(899книг)</span>
+          <a href="">Литература 19 века</a><span>(899книг)</span>
+          <a href="">Литература 20 века</a><span>(89книг)</span>
+        </div>
+        <div class="fast-menu__block  fast-menu__block-3">
+          <a href="">Советская литература </a><span>(109книг)</span>
+          <a href="">Зарубежная литература </a><span>(89книг)</span>
+          <a href="">Древневосточная литература </a><span>(99книг)</span>
+          <a href="">Европейская </a><span>(89книг)</span>
+        </div>
       </div>
-      <div class="filter__price">
-        <select name="">
-          <option value="">от 100 до 1200 руб.</option>
-          <option value="">от 1300 до 5000 руб.</option>
-        </select>
+    </div>
+    <div class="books__items">
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">500 Р</p>
       </div>
-      <div class="filter__store">
-        <b>По наличию:</b>
-        <ul>
-          <li><span>success</span>
-            <i class="filter__store-icon  filter__store-icon--success"></i>
-          </li>
-          <li><span>time</span>
-            <i class="filter__store-icon  filter__store-icon--time"></i>
-          </li>
-          <li><span>denied</span>
-            <i class="filter__store-icon  filter__store-icon--denied"></i>
-          </li>
-        </ul>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">1345 Р</p>
       </div>
-      <div class="filter__view">
-        <b>Вид:</b>
-        <ul>
-          <li><span>block</span>
-            <i class="filter__view-icon  filter__view-icon--block"></i>
-          </li>
-          <li><span>inline</span>
-            <i class="filter__view-icon  filter__view-icon--inline"></i>
-          </li>
-        </ul>
+      <div class="books__item">
+        <svg class="books__star">
+          <use xlink:href="#favorite-fill"></use>
+        </svg>
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">400 Р набор из 4 книг</p>
       </div>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">500 Р</p>
+      </div>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">1345 Р</p>
+      </div>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">500 Р</p>
+      </div>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">500 Р</p>
+      </div>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">1345 Р</p>
+      </div>
+      <div class="books__item">
+        <svg class="books__star">
+          <use xlink:href="#favorite-fill"></use>
+        </svg>
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">400 Р набор из 4 книг</p>
+      </div>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">500 Р</p>
+      </div>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">1345 Р</p>
+      </div>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">500 Р</p>
+      </div>
+      <div class="books__item">
+        <svg class="books__star">
+          <use xlink:href="#favorite-fill"></use>
+        </svg>
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">400 Р набор из 4 книг</p>
+      </div>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">500 Р</p>
+      </div>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">1345 Р</p>
+      </div>
+      <div class="books__item">
+        <div class="books__text">
+          <ul class="books__stars">
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite-fill"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+          </ul>
+          <h3>Фарида Кудашева</h3>
+          <p>Обладательница божественного дара</p>
+          <p>Миннулин Р.М</p>
+          <ul class="books__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="books__item-price">500 Р</p>
+      </div>
+    </div>
+  </div>
+  <div class="pagination">
+    <div class="pagination__number">
+      <ul>
+        <li class="pagination__active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>...</li>
+        <li>37</li>
+      </ul>
+      <a class="pagination__next" href="">
+        Следующая
+        <svg>
+          <use xlink:href="#arrow-right"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="pagination__view">
+      <span>Показывать по</span>
+      <ul>
+        <li>10</li>
+        <li>20</li>
+        <li>30</li>
+      </ul>
+    </div>
+  </div>
+  <div id="container">
+    <h2>Новые подборки исходя из ваших предпочтений</h2>
+    <ul id="items">
+      <li class="slider__item">
+        <div class="slider__text">
+          <div class="slider__block">
+            <ul class="slider__stars">
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Фарида Кудашева</h3>
+            <p>Обладательница божественного дара</p>
+            <p>Миннулин Р.М</p>
+          </div>
+          <ul class="slider__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="slider__item-price">500 Р</p>
+      </li>
+      <li class="slider__item">
+        <div class="slider__text">
+          <div class="slider__block">
+            <ul class="slider__stars">
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Фарида Кудашева</h3>
+            <p>Обладательница божественного дара</p>
+            <p>Миннулин Р.М</p>
+          </div>
+          <ul class="slider__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="slider__item-price">500 Р</p>
+      </li>
+      <li class="slider__item">
+        <div class="slider__text">
+          <div class="slider__block">
+            <ul class="slider__stars">
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Фарида Кудашева</h3>
+            <p>Обладательница божественного дара</p>
+            <p>Миннулин Р.М</p>
+          </div>
+          <ul class="slider__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="slider__item-price">500 Р</p>
+      </li>
+      <li class="slider__item">
+        <div class="slider__text">
+          <div class="slider__block">
+            <ul class="slider__stars">
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Фарида Кудашева</h3>
+            <p>Обладательница божественного дара</p>
+            <p>Миннулин Р.М</p>
+          </div>
+          <ul class="slider__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="slider__item-price">500 Р</p>
+      </li>
+      <li class="slider__item">
+        <div class="slider__text">
+          <div class="slider__block">
+            <ul class="slider__stars">
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg>
+                  <use xlink:href="#favorite"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Фарида Кудашева</h3>
+            <p>Обладательница божественного дара</p>
+            <p>Миннулин Р.М</p>
+          </div>
+          <ul class="slider__bar">
+            <li>
+              <svg>
+                <use xlink:href="#basket"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#favorite"></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use xlink:href="#bars"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="slider__item-price">500 Р</p>
+      </li>
+    </ul>
+  </div>
+  <div class="recent">
+    <h2>Вы недавно смотрели</h2>
+    <div class="recent__items">
+      <div class="recent__item">
+        <div class="recent__text">420 P</div>
+        <svg>
+          <use xlink:href="#favorite-fill"></use>
+        </svg>
+      </div>
+      <div class="recent__item">
+        <svg>
+          <use xlink:href="#favorite-fill"></use>
+        </svg>
+      </div>
+      <div class="recent__item">
+        <div class="recent__text">Нет в продаже</div>
+        <svg>
+          <use xlink:href="#favorite-fill"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="recent__view">
+      <svg>
+        <use xlink:href="#square"></use>
+      </svg>
+      <svg>
+        <use xlink:href="#sandwich"></use>
+      </svg>
     </div>
   </div>
   @@include('../common/footer.html')
 </div>
 <script src="libraries/utils.js"></script>
+<script type="text/javascript" src="libraries/jquery.min.js"></script>
+<script type="text/javascript" src="libraries/easypaginate.min.js"></script>
+<script type="text/javascript">
+  jQuery(function ($) {
+    if (document.body.clientWidth > '300' && document.body.clientWidth <= '768') {
+      $('ul#items').easyPaginate({
+        step: 1
+      });
+    }
+    if (document.body.clientWidth > '768') {
+      $('ul#items').easyPaginate({
+        step: 4
+      });
+    }
+  });
+</script>
 <script src="scripts/index.js"></script>
 </body>
 </html>

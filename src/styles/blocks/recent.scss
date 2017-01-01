@@ -1,0 +1,100 @@
+.recent {
+  position: relative;
+  background: linear-gradient(#324a74, #4b695d);
+  padding-top: 20px;
+  padding-left: 40px;
+  margin-top: 30px;
+  overflow: hidden;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    filter: blur(200px);
+    background: #427269;
+    border-radius: 100%;
+    top: -100px;
+    left: -100px;
+    z-index: 2;
+  }
+  h2 {
+    color: #fff;
+    position: relative;
+    z-index: 3;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    z-index: 3;
+  }
+  &__item {
+    width: 235px;
+    height: 335px;
+    position: relative;
+    margin-bottom: 40px;
+    svg {
+      position: absolute;
+      right: -20px;
+      top: 10px;
+      width: 15px;
+      height: 15px;
+      fill: #fff;
+    }
+    &:nth-child(1) {
+      background: url("../images/books-item-3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &:nth-child(2) {
+      background: url("../images/recent__item-2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      &:after {
+        content: "Б";
+        display: block;
+        position: absolute;
+        background: #fff;
+        top: 40px;
+        right: -18px;
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+    }
+    &:nth-child(3) {
+      margin-left: 16px;
+      background: url("../images/recent__item-3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &__text {
+    position: absolute;
+    z-index: 15;
+    bottom: -25px;
+    color: #fff;
+  }
+  &__view {
+    position: absolute;
+    right: -10px;
+    top: 22px;
+    z-index: 4;
+    svg {
+      width: 25px;
+      height: 25px;
+      fill: #fff;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+  @media(max-width:638px) {
+    &__item {
+      margin-top: 40px;
+    }
+  }
+  @media(max-width:896px) {
+    padding-bottom: 40px;
+  }
+}
