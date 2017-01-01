@@ -76,6 +76,9 @@
       background: url('../images/filter/denied.png#filter');
     }
   }
+  &__view{
+    margin-right: 10px;
+  }
   &__view-icon {
     cursor: pointer;
     &--block {

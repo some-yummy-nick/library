@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
+const htmlmin = require('gulp-htmlmin');
 const fileinclude = require('gulp-file-include');
 const sourcemaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
@@ -67,6 +68,9 @@ gulp.task('html', () => {
       prefix: '@@',
       basepath: '@file'
     }))
+    .pipe(gulpif(NODE_ENV === 'production',
+      htmlmin({collapseWhitespace: true})
+    ))
     .pipe(gulp.dest('dest'))
     .pipe(sync.stream());
 });
