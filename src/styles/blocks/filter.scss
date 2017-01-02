@@ -77,7 +77,10 @@
     }
   }
   &__view{
-    margin-right: 10px;
+    b{
+       margin-right: 10px;
+    }
+    
   }
   &__view-icon {
     cursor: pointer;
